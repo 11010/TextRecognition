@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 TextRecognizer textRecognizer = new TextRecognizer.Builder(getApplicationContext()).build();
                 if (!textRecognizer.isOperational()){
                     Toast.makeText(getApplicationContext(),"ERRO",Toast.LENGTH_SHORT).show();
